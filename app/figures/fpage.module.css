@@ -1,0 +1,28 @@
+.body {
+    background-color: #816352;
+}
+
+.finfo {
+    display: flex;
+    align-items: center;
+}
+
+.finfo p {
+    font-size: 30px;
+}
+
+.finfo img {
+    width: 70px;
+    height: 70px;
+}
+
+.fhod {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fhod img {
+    display: flex;
+   width: 700px;
+   height: 474px;
+}

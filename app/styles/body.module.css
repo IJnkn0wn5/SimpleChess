@@ -1,0 +1,92 @@
+.body {
+    background-color: #816352;
+}
+
+.cards {
+    display: flex;
+    padding: 125px;
+    align-items: center;
+    justify-content: center;
+    gap: 57px;
+}
+
+.card1 {
+    width: 270px;
+    height: 270px;
+    background-color: #231A16;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease-out, color 0.1s ease-out; 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); 
+    transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.card1:hover {
+    transform: translateY(-7px); 
+    box-shadow: 
+    0 0 15px rgba(255, 255, 255, 0.8), 
+    0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+
+.card2 {
+    width: 270px;
+    height: 270px;
+    background-color: #231A16;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease-out, color 0.1s ease-out; 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); 
+    transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.card2:hover {
+    transform: translateY(-7px); 
+    box-shadow: 
+    0 0 15px rgba(255, 255, 255, 0.8), 
+    0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.card3 {
+    width: 270px;
+    height: 270px;
+    background-color: #231A16;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease-out, color 0.1s ease-out; 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); 
+    transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.card3:hover {
+    transform: translateY(-7px); 
+    box-shadow: 
+    0 0 15px rgba(255, 255, 255, 0.8), 
+    0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.card4 {
+    width: 270px;
+    height: 270px;
+    background-color: #231A16;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease-out, color 0.1s ease-out; 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); 
+    transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.card4:hover {
+    transform: translateY(-7px); 
+    box-shadow: 
+    0 0 15px rgba(255, 255, 255, 0.8), 
+    0 0 5px rgba(255, 255, 255, 0.5);
+}

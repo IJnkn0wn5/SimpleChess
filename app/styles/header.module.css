@@ -1,0 +1,17 @@
+.header {
+    background-color: #332116;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.header h1 {
+    font-size: 48px;
+} 
+
+.header img {
+    width: 113px;
+    height: 113px;
+}
