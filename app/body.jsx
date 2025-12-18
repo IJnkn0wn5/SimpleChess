@@ -8,7 +8,7 @@ export default function Body(){
                 <a href="/figures"  className={styles.card1}>
                     <img src="./card1.png" alt="" />
                 </a>
-                 <a href="#"  className={styles.card2}>
+                 <a href="/debuts"  className={styles.card2}>
                     <img src="./card2.png" alt="" />
                 </a>
                  <a href="#"  className={styles.card3}>

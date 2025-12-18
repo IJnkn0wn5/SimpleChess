@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        <header style={{ flexGrow: 1 }}>
+        <header>
           <Header />
         </header>
         <main style={{ flexGrow: 1 }}>

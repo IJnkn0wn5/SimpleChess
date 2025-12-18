@@ -55,8 +55,21 @@ import Typography from '@mui/material/Typography';
         const handleChange = (panel) => (event, newExpanded) => {
             setExpanded(newExpanded ? panel : false);
         };
+
+        function openChessWindow(){
+            window.open('/chess', '_blank', 'noopener,noreferrer,width=1000,height=800');
+         }
         return (
                  <div className={styles.body}>
+
+                    <a href="./" className={styles.backButton}>
+                        <img src="./backbutton.png" alt="" />
+                        <p>На главную</p>
+                    </a>
+
+                    <div className={styles.btncontainer}>
+                        <button onClick={openChessWindow} className={styles.openChessButton}> Открыть шахматы в новом окне </button>
+                    </div>
                     <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                             <div className={styles.finfo}>
@@ -101,6 +114,36 @@ import Typography from '@mui/material/Typography';
 
                     <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
+                            <div className={styles.finfo}>
+                                <img src="./peshka.png" alt="" />
+                                <p>Пешка - такая то такая то</p>
+                            </div>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <div className={styles.fhod}>
+                                <img src="./pinfo.png" alt="" />
+                            </div>
+                        </AccordionDetails>
+                    </Accordion>
+
+                    
+                    <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+                        <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
+                            <div className={styles.finfo}>
+                                <img src="./peshka.png" alt="" />
+                                <p>Пешка - такая то такая то</p>
+                            </div>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <div className={styles.fhod}>
+                                <img src="./pinfo.png" alt="" />
+                            </div>
+                        </AccordionDetails>
+                    </Accordion>
+
+                    
+                    <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+                        <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
                             <div className={styles.finfo}>
                                 <img src="./peshka.png" alt="" />
                                 <p>Пешка - такая то такая то</p>
