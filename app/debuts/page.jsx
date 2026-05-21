@@ -22,7 +22,7 @@ export default function Debuts(){
             </div>
 
             <div className={styles.dline}>
-                <a className={styles.dcards}>
+                <a href="/pdebuts" className={styles.dcards}>
                     <img src="./debjutgroba.png" alt="" />
                     <p>Дебют Гроба</p>
                 </a>

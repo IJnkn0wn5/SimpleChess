@@ -68,18 +68,19 @@ import Typography from '@mui/material/Typography';
                     </a>
 
                     <div className={styles.btncontainer}>
-                        <button onClick={openChessWindow} className={styles.openChessButton}> Открыть шахматы в новом окне </button>
+                        <button onClick={openChessWindow} className={styles.openChessButton}> Открыть доску </button>
                     </div>
                     <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                             <div className={styles.finfo}>
-                                <img src="./peshka.png" alt="" />
-                                <p>Пешка - такая то такая то</p>
+                                <img src="./fig/peshka.png" alt="" />
+                                <p>Пешка -  пехотинец; ходит только вперед на одну клетку, бьет по диагонали. <br/>может стать любой фигурой,
+                                когда дойдет до другого конца доски</p>
                             </div>
                         </AccordionSummary>
                         <AccordionDetails>
                             <div className={styles.fhod}>
-                                <img src="./pinfo.png" alt="" />
+                                <img src="./finfo/pinfo.png" alt="" />
                             </div>
                         </AccordionDetails>
                     </Accordion>
@@ -87,13 +88,13 @@ import Typography from '@mui/material/Typography';
                     <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
                             <div className={styles.finfo}>
-                                <img src="./peshka.png" alt="" />
-                                <p>Пешка - такая то такая то</p>
+                                <img src="./fig/hourse.png" alt="" />
+                                <p>Конь — прыгун; ходит буквой «Г» и умеет перепрыгивать через любые другие фигуры.</p>
                             </div>
                         </AccordionSummary>
                         <AccordionDetails>
                             <div className={styles.fhod}>
-                                <img src="./pinfo.png" alt="" />
+                                <img src="./finfo/hinfo.png" alt="" />
                             </div>
                         </AccordionDetails>
                     </Accordion>
@@ -101,13 +102,13 @@ import Typography from '@mui/material/Typography';
                     <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
                             <div className={styles.finfo}>
-                                <img src="./peshka.png" alt="" />
-                                <p>Пешка - такая то такая то</p>
+                                <img src="./fig/slon.png" alt="" />
+                                <p>Слон — снайпер; ходит и бьет строго по диагоналям своего цвета на любую дистанцию.</p>
                             </div>
                         </AccordionSummary>
                         <AccordionDetails>
                             <div className={styles.fhod}>
-                                <img src="./pinfo.png" alt="" />
+                                <img src="./finfo/sinfo.png" alt="" />
                             </div>
                         </AccordionDetails>
                     </Accordion>
@@ -115,13 +116,13 @@ import Typography from '@mui/material/Typography';
                     <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
                             <div className={styles.finfo}>
-                                <img src="./peshka.png" alt="" />
-                                <p>Пешка - такая то такая то</p>
+                                <img src="./fig/ladya.png" alt="" />
+                                <p>Ладья — танк; прямолинейно перемещается по вертикалям и горизонталям на всю доску.</p>
                             </div>
                         </AccordionSummary>
                         <AccordionDetails>
                             <div className={styles.fhod}>
-                                <img src="./pinfo.png" alt="" />
+                                <img src="./finfo/linfo.png" alt="" />
                             </div>
                         </AccordionDetails>
                     </Accordion>
@@ -130,13 +131,13 @@ import Typography from '@mui/material/Typography';
                     <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
                         <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
                             <div className={styles.finfo}>
-                                <img src="./peshka.png" alt="" />
-                                <p>Пешка - такая то такая то</p>
+                                <img src="./fig/queen.png" alt="" />
+                                <p>Ферзь — королева; сильнейшая фигура, сочетает в себе ходы ладьи и слона.</p>
                             </div>
                         </AccordionSummary>
                         <AccordionDetails>
                             <div className={styles.fhod}>
-                                <img src="./pinfo.png" alt="" />
+                                <img src="./finfo/qinfo.png" alt="" />
                             </div>
                         </AccordionDetails>
                     </Accordion>
@@ -145,13 +146,13 @@ import Typography from '@mui/material/Typography';
                     <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
                         <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
                             <div className={styles.finfo}>
-                                <img src="./peshka.png" alt="" />
-                                <p>Пешка - такая то такая то</p>
+                                <img src="./fig/king.png" alt="" />
+                                <p>Король — лидер; ходит на одну клетку во все стороны, цель игры — защитить его.</p>
                             </div>
                         </AccordionSummary>
                         <AccordionDetails>
                             <div className={styles.fhod}>
-                                <img src="./pinfo.png" alt="" />
+                                <img src="./finfo/kinfo.png" alt="" />
                             </div>
                         </AccordionDetails>
                     </Accordion>
