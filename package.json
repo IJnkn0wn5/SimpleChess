@@ -6,8 +6,7 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "rm -rf node_modules/kokopu-react/dist/lib/chessboard/sounds"
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -18,7 +17,7 @@
     "@mui/styled-engine-sc": "^7.3.6",
     "chess.js": "^1.4.0",
     "kokopu": "^4.13.2",
-    "kokopu-react": "^3.4.1",
+    "kokopu-react": "3.4.0",
     "next": "16.0.8",
     "react": "19.2.1",
     "react-dom": "19.2.1",
