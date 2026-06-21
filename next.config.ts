@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
   turbopack: {
     rules: {
       '*.ogg': {
-        loaders: ['file-loader'],
-        as: 'resource',
+        loaders: ['@next/swc-loader'],
+        as: 'asset',
       },
     },
   },
