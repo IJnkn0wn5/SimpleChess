@@ -10,11 +10,20 @@
     font-weight: 700px;
 }
 
-.pd p {
+.prehistory{
     color: white;
     font-style: italic;
     font-weight: lighter;
     text-align: center;
+}
+
+.otheory {
+    font-weight: bolder;
+    color: white;
+}
+
+.theory {
+    color: white;
 }
 
 .openChessButton {

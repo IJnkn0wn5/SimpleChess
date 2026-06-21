@@ -22,30 +22,26 @@ export default function Debuts(){
             </div>
 
             <div className={styles.dline}>
-                <a href="/pdebuts" className={styles.dcards}>
-                    <img src="./debjutgroba.png" alt="" />
-                    <p>Дебют Гроба</p>
-                </a>
+                <div className={styles.ditems}>
+                    <a href="/pdebuts/Grob" className={styles.dcards}>
+                        <img src="./debjutgroba.png" alt="" />
+                        <p>Дебют Гроба</p>
+                    </a>
+                </div>
+                
+                <div className={styles.ditems}>
+                    <a href="/pdebuts/evans" className={styles.dcards}>
+                        <img src="./evans.png" alt="" />
+                        <p>Гамбит Эванса</p>
+                    </a>
+                </div>
 
-                <a className={styles.dcards}>
-                    <img src="./debjutgroba.png" alt="" />
-                    <p>Дебют Гроба</p>
-                </a>
-
-                <a className={styles.dcards}>
-                    <img src="./debjutgroba.png" alt="" />
-                    <p>Дебют Гроба</p>
-                </a>
-
-                <a className={styles.dcards}>
-                    <img src="./debjutgroba.png" alt="" />
-                    <p>Дебют Гроба</p>
-                </a>
-
-                <a className={styles.dcards}>
-                    <img src="./debjutgroba.png" alt="" />
-                    <p>Дебют Гроба</p>
-                </a>
+                <div className={styles.ditems}>
+                    <a href="/pdebuts/SlavicDefend" className={styles.dcards}>
+                        <img src="./sd.png" alt="" />
+                        <p>Славянская защита</p>
+                    </a>
+                </div>
             </div>
 
              

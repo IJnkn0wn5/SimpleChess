@@ -12,7 +12,7 @@ export default function Header(){
         <header className={` ${styles.header} ${holtwood.className} `}>
             <a href="./" className={styles.header}>
                 <h1>SIMPLE CHESS</h1>
-                <img src="./sc_logo.png" alt="" />
+                <img src="/sc_logo.png" alt="" />
             </a>
             
         </header>
