@@ -7,8 +7,9 @@ const nextConfig: NextConfig = {
   turbopack: {
     rules: {
       '*.ogg': {
-        as: 'url',
-      } as any, // Обходим жесткое требование TypeScript к наличию loaders
+        loaders: [], // Пустой массив лоадеров решает ошибку 'is not iterable'
+        as: 'url',   // Говорит Turbopack импортировать файл как текстовую ссылку-путь
+      },
     },
   },
 };
