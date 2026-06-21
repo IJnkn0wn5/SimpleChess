@@ -7,9 +7,8 @@ const nextConfig: NextConfig = {
   turbopack: {
     rules: {
       '*.ogg': {
-        loaders: ['@next/swc-loader'],
-        as: 'asset',
-      },
+        as: 'url',
+      } as any, // Обходим жесткое требование TypeScript к наличию loaders
     },
   },
 };
