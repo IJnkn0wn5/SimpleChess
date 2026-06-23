@@ -1,13 +1,22 @@
 'use client'
 
 import styles from "@/app/mitelshpil/mitelshpil.module.css"
-
+import { useEffect, useState } from 'react';
 
 export default function Mitelshpil(){
     
      function openChessWindow(){
         window.open('/chess', '_blank', 'noopener,noreferrer,width=1000,height=800');
     }
+
+    const [mitelshpils, setMitelshpils] = useState([]);
+
+    useEffect(() => {
+    fetch('/mitelshpils.json')
+        .then((res) => res.json())
+        .then((data) => setMitelshpils(data))
+        .catch((err) => console.error("Ошибка загрузки:", err));
+    }, []);
 
     return (
         <div className={styles.debuts}>
@@ -28,27 +37,16 @@ export default function Mitelshpil(){
             </div>  
 
             <div className={styles.dline}>
-                <div className={styles.ditems}>
-                    <a href="/mitelshpil/PawnAssault" className={styles.dcards}>
-                        <img src="./PawnAssault.png" alt="" />
-                        <p>Пешечный штурм</p>
+            {mitelshpils.map((item) => (
+                <div key={item.id} className={styles.ditems}>
+                    <a href={item.href} className={styles.dcards}>
+                        <img src={item.src} alt="" />
+                        <p>{item.title}</p>
                     </a>
                 </div>
-                
-                <div className={styles.ditems}>
-                    <a href="/mitelshpil/StoneWall" className={styles.dcards}>
-                        <img src="./StoneWall.png" alt="" />
-                        <p>Каменная стена</p>
-                    </a>
-                </div>
-
-                <div className={styles.ditems}>
-                    <a href="/mitelshpil/Ifp" className={styles.dcards}>
-                        <img src="./ifp.png" alt="" />
-                        <p>ИФП</p>
-                    </a>
-                </div>
+            ))}
             </div>
+
 
              
         </div>

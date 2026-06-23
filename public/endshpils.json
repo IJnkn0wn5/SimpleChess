@@ -1,0 +1,5 @@
+[
+  { "id": 1, "href": "/endshpil/SaveDistation", "src": "./saved.png", "title": "Сохранение дистанции" },
+  { "id": 2, "href": "/endshpil/Stopinghourse", "src": "./stopinghourse.png", "title": "Ограничение Коня" },
+  { "id": 3, "href": "/endshpil/StrongE", "src": "./stronge.png", "title": "Сильный Слон" }
+]

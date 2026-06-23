@@ -1,0 +1,5 @@
+[
+  { "id": 1, "href": "/pdebuts/Grob", "src": "./debjutgroba.png", "title": "Дебют Гроба" },
+  { "id": 2, "href": "/pdebuts/evans", "src": "./evans.png", "title": "Гамбит Эванса" },
+  { "id": 3, "href": "/pdebuts/SlavicDefend", "src": "./sd.png", "title": "Славянская защита" }
+]

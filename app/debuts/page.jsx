@@ -1,51 +1,54 @@
 'use client'
 
+import { useEffect, useState } from 'react';
 import styles from "@/app/debuts/debuts.module.css"
 
 
 export default function Debuts(){
+
+    // Внутри функции компонента (например, export default function Debuts() { ... })
+const [debuts, setDebuts] = useState([]);
+
+useEffect(() => {
+  fetch('/debuts.json')
+    .then((res) => res.json())
+    .then((data) => setDebuts(data))
+    .catch((err) => console.error("Ошибка загрузки:", err));
+}, []);
+
+// Функция для кнопки (убедитесь, что она у вас объявлена)
+const openChessWindow = () => {
+  // ваша логика открытия окна
+};
+
+return (
+  <div className={styles.debuts}>
     
-     function openChessWindow(){
-        window.open('/chess', '_blank', 'noopener,noreferrer,width=1000,height=800');
-    }
+    <a href="./" className={styles.backButton}>
+      <img src="./backbutton.png" alt="" />
+      <p>На главную</p>
+    </a>
 
-    return (
-        <div className={styles.debuts}>
+    <div className={styles.btncontainer}>
+      <button onClick={openChessWindow} className={styles.openChessButton}>
+        Открыть шахматы в новом окне
+      </button>
+    </div>
 
-            <a href="./" className={styles.backButton}>
-                <img src="./backbutton.png" alt="" />
-                <p>На главную</p>
-            </a>
-
-            <div className={styles.btncontainer}>
-                <button onClick={openChessWindow} className={styles.openChessButton}> Открыть шахматы в новом окне </button>
-            </div>
-
-            <div className={styles.dline}>
-                <div className={styles.ditems}>
-                    <a href="/pdebuts/Grob" className={styles.dcards}>
-                        <img src="./debjutgroba.png" alt="" />
-                        <p>Дебют Гроба</p>
-                    </a>
-                </div>
-                
-                <div className={styles.ditems}>
-                    <a href="/pdebuts/evans" className={styles.dcards}>
-                        <img src="./evans.png" alt="" />
-                        <p>Гамбит Эванса</p>
-                    </a>
-                </div>
-
-                <div className={styles.ditems}>
-                    <a href="/pdebuts/SlavicDefend" className={styles.dcards}>
-                        <img src="./sd.png" alt="" />
-                        <p>Славянская защита</p>
-                    </a>
-                </div>
-            </div>
-
-             
+    {/* Динамический блок дебютов */}
+    <div className={styles.dline}>
+      {debuts.map((debut) => (
+        <div key={debut.id} className={styles.ditems}>
+          <a href={debut.href} className={styles.dcards}>
+            <img src={debut.src} alt="" />
+            <p>{debut.title}</p>
+          </a>
         </div>
-    )
+      ))}
+    </div>
+
+  </div>
+);
+
     
 }

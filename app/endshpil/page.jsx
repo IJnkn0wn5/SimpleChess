@@ -1,6 +1,7 @@
 'use client'
 
 import styles from "@/app/endshpil/endshpil.module.css"
+import { useEffect, useState } from 'react';
 
 
 export default function Endshpil(){
@@ -8,6 +9,15 @@ export default function Endshpil(){
      function openChessWindow(){
         window.open('/chess', '_blank', 'noopener,noreferrer,width=1000,height=800');
     }
+
+    const [endshpils, setEndshpils] = useState([]);
+
+    useEffect(() => {
+    fetch('/endshpils.json')
+        .then((res) => res.json())
+        .then((data) => setEndshpils(data))
+        .catch((err) => console.error("Ошибка загрузки:", err));
+    }, []);
 
     return (
         <div className={styles.debuts}>
@@ -29,26 +39,14 @@ export default function Endshpil(){
             </div>  
 
             <div className={styles.dline}>
-                <div className={styles.ditems}>
-                    <a href="/endshpil/SaveDistation" className={styles.dcards}>
-                        <img src="./saved.png" alt="" />
-                        <p>Сохранение дистанции</p>
-                    </a>
-                </div>
-                
-                <div className={styles.ditems}>
-                    <a href="/endshpil/Stopinghourse" className={styles.dcards}>
-                        <img src="./stopinghourse.png" alt="" />
-                        <p>Ограничение Коня</p>
-                    </a>
-                </div>
-
-                <div className={styles.ditems}>
-                    <a href="/endshpil/StrongE" className={styles.dcards}>
-                        <img src="./stronge.png" alt="" />
-                        <p>Сильный Слон</p>
-                    </a>
-                </div>
+                {endshpils.map((item) => (
+                    <div key={item.id} className={styles.ditems}>
+                        <a href={item.href} className={styles.dcards}>
+                            <img src={item.src} alt="" />
+                            <p>{item.title}</p>
+                        </a>
+                    </div>
+                ))}
             </div>
 
              

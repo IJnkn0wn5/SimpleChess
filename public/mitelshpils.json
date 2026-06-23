@@ -1,0 +1,5 @@
+[
+  { "id": 1, "href": "/mitelshpil/PawnAssault", "src": "./PawnAssault.png", "title": "Пешечный штурм" },
+  { "id": 2, "href": "/mitelshpil/StoneWall", "src": "./StoneWall.png", "title": "Каменная стена" },
+  { "id": 3, "href": "/mitelshpil/Ifp", "src": "./ifp.png", "title": "ИФП" }
+]
